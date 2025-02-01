@@ -8,7 +8,7 @@ function User(props) {
 
   const deleteHandler = async () => {
     try {
-      await axios.delete(`http://localhost:5000/users/${_id}`);
+      await axios.delete(`http://3.89.143.80:5000/users/${_id}`);
       navigate("/UserDetails"); // Navigate to UserDetails page after deletion
     } catch (error) {
       console.error("Error deleting user:", error);

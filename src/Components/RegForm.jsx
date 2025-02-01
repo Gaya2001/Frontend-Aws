@@ -30,7 +30,7 @@ function RegForm() {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:5000/register", {
+      .post("http://3.89.143.80:5000/register", {
         name: user.name,
         email: user.email,
         password: user.password,

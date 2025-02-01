@@ -27,7 +27,7 @@ function AddUser() {
   };
 
   const sendRequest = async () => {
-    await axios.post("http://localhost:5000/users", {
+    await axios.post("http://3.89.143.80:5000/users", {
       name: String(input.name),
       gmail: String(input.gmail),
       age: Number(input.age),

@@ -28,7 +28,7 @@ jobs:
         docker push gaya2001/frontend:latest
 
   deploy:
-    runs-on: [self-hosted, aws]  # Using self-hosted runner on AWS EC2
+    runs-on: self-hosted  # Using self-hosted runner on AWS EC2
 
     steps:
     - name: Checkout repository

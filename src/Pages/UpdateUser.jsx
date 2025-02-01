@@ -15,7 +15,7 @@ function UpdateUser() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/users/${id}`);
+        const response = await axios.get(`http://3.89.143.80:5000/users/${id}`);
         setInput(response.data.user);
       } catch (error) {
         console.error("Error fetching user:", error);
@@ -28,7 +28,7 @@ function UpdateUser() {
 
   const sendRequest = async () => {
     try {
-      await axios.put(`http://localhost:5000/users/${id}`, {
+      await axios.put(`http://3.89.143.80:5000/users/${id}`, {
         name: String(input.name),
         gmail: String(input.gmail),
         age: Number(input.age),

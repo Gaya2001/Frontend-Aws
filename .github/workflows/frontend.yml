@@ -36,9 +36,8 @@ jobs:
 
     - name: Pull frontend Docker image from Docker Hub
       run: |
-        docker pull your-dockerhub-username/frontend:latest
+        docker pull gaya2001/frontend:latest
 
     - name: Deploy frontend Docker container
       run: |
-        cd /path/to/your/project
-        docker-compose -f docker-compose.yml up -d  # Assuming you have docker-compose set up
+        docker run --name Frontend-Aws -p 5173:5173  gaya2001/frontend:latest

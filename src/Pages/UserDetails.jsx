@@ -3,7 +3,7 @@ import Navbar from "../Components/Nav/Navbar";
 import axios from "axios";
 import User from "../Pages/User";
 
-const URL = "http://localhost:5000/users";
+const URL = "http://3.89.143.80:5000/users";
 
 const fetchHandler = async () => {
   try {

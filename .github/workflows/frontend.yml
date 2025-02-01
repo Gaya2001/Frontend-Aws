@@ -3,7 +3,7 @@ name: Frontend - Build and Deploy
 on:
   push:
     branches:
-      - main  # Trigger on push to master branch
+      - main  # Trigger on push to the main branch
 
 jobs:
   build:
@@ -40,4 +40,4 @@ jobs:
 
     - name: Deploy frontend Docker container
       run: |
-        docker run --name Frontend-Aws -p 5173:5173  gaya2001/frontend:latest
+        docker run --name Frontend-Aws -p 5173:5173 gaya2001/frontend:latest

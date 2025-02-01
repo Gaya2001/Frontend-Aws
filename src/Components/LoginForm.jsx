@@ -31,7 +31,7 @@ function Form() {
   };
 
   const sendRequest = async () => {
-    const response = await axios.post("http://localhost:5000/login", {
+    const response = await axios.post("http://3.89.143.80:5000/login", {
       email: user.email,
       password: user.password,
     });
